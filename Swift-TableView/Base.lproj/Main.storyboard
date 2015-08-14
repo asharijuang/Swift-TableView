@@ -27,6 +27,27 @@
                                     <navigationItem title="Title" id="rHV-vJ-DrL"/>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-5i-NVz">
+                                <rect key="frame" x="0.0" y="133" width="600" height="467"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="B58-aB-RC4">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B58-aB-RC4" id="CuW-B9-35c">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lBe-qj-Mx2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AUC-vW-nxd"/>
+                                </connections>
+                            </tableView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-wn-Os4">
                                 <rect key="frame" x="18" y="95" width="564" height="31"/>
                                 <animations/>
@@ -41,12 +62,16 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Oh3-5i-NVz" firstAttribute="top" secondItem="mq1-wn-Os4" secondAttribute="bottom" constant="8" id="1mC-3s-8Ct"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Oh3-5i-NVz" secondAttribute="bottom" id="A4l-OV-fng"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z7K-ga-soi" secondAttribute="trailing" constant="-20" id="EdM-ae-Eyf"/>
                             <constraint firstItem="mq1-wn-Os4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="K3v-Qu-GrC"/>
+                            <constraint firstItem="Oh3-5i-NVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="MV0-Qw-hYt"/>
                             <constraint firstItem="z7K-ga-soi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QMW-0q-l4F"/>
                             <constraint firstItem="mq1-wn-Os4" firstAttribute="top" secondItem="z7K-ga-soi" secondAttribute="bottom" constant="31" id="ddi-pu-LdI"/>
                             <constraint firstItem="mq1-wn-Os4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dld-Wg-TId"/>
                             <constraint firstItem="z7K-ga-soi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fpB-sP-opI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oh3-5i-NVz" secondAttribute="trailing" constant="-20" id="qoF-yV-LA5"/>
                         </constraints>
                     </view>
                     <connections>
