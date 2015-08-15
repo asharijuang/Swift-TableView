@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate{
 
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate{
     }
 
     @IBAction func sliderMove(sender: AnyObject) {
-        print(slider.value)
+        table.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

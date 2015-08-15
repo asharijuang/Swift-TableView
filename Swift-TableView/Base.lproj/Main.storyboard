@@ -76,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="slider" destination="mq1-wn-Os4" id="ml1-in-EzZ"/>
+                        <outlet property="table" destination="Oh3-5i-NVz" id="2RR-CF-tU2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
